@@ -1,0 +1,216 @@
+@import url(//fonts.googleapis.com/css?family=Fjalla+One);
+@import url(//fonts.googleapis.com/css?family=Fjalla+One);
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+.upper-row {
+  *zoom: 1;
+}
+.upper-row:before, .upper-row:after {
+  content: " ";
+  display: table;
+}
+.upper-row:after {
+  clear: both;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  line-height: 1.1em;
+}
+
+html, body {
+  height: 100%;
+}
+
+body * {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
+body {
+  background-color: #eee;
+  font-size: 16px;
+  color: #333333;
+  background: url(/assets/images/skyline.jpg) no-repeat fixed center;
+  background-size: cover;
+}
+
+a {
+  color: #333;
+}
+
+.container {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  /* Firefox */
+  -webkit-animation: fadein 1s;
+  /* Safari and Chrome */
+  -o-animation: fadein 1s;
+  /* Opera */
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 60%;
+  }
+}
+.container > section {
+  width: 100%;
+  color: #000;
+}
+.container > section:first-child {
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+.container > section:last-child {
+  padding: 20px;
+  color: gainsboro;
+  background: rgba(0,0,0,0.5);
+}
+.container > section:last-child li {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .container > section {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+}
+
+.upper-row {
+  border-bottom: 1px solid #9d2a2a;
+}
+.upper-row > div {
+  float: left;
+}
+.upper-row > div:first-child {
+  width: 35%;
+}
+.upper-row > div:last-child {
+  width: 65%;
+  padding-top: 20px;
+}
+
+.date {
+  font-size: 6.5em;
+  font-size: bold;
+  border-right: 1px solid #9d2a2a;
+}
+@media (min-width: 768px) {
+  .date {
+    font-size: 10em;
+  }
+}
+
+.monthyear, .day {
+  font-size: 2.4em;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .monthyear, .day {
+    font-size: 4em;
+  }
+}
+
+.holiday {
+  padding-top: 10px;
+  font-size: 1.5em;
+  color: #333333;
+}
+
+hr {
+  padding: 0;
+  border: none;
+  border-top: 1px double #9d2a2a;
+  color: #9d2a2a;
+  text-align: center;
+}
+
+.icon-link {
+  color: #009688;
+  display: block;
+}
+.icon-link:before {
+  content: "\203A";
+  display: inline-block;
+  font-size: 30px;
+  vertical-align: sub;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
